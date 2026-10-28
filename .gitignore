@@ -1,0 +1,24 @@
+
+# Python 虛擬環境
+.venv/
+venv/
+
+# Python 暫存檔
+__pycache__/
+*.pyc
+
+# 金鑰資料庫與本機資料
+dragon_rescue.db
+*.db
+*.sqlite
+*.sqlite3
+
+# 本機備份
+backup/
+
+# 環境變數與機密設定
+.env
+.env.*
+
+# 編輯器設定
+.vscode/

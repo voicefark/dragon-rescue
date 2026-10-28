@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>答題結果 - 奶龍救援任務</title>
+</head>
+<body>
+    <h1>奶龍救援任務</h1>
+
+    <h2>{{ question.question }}</h2>
+
+    {% if correct %}
+        <p>答對了！奶龍救援進度增加！</p>
+    {% else %}
+        <p>答錯了，再接再厲！</p>
+        <p>正確答案：{{ correct_answer }}</p>
+    {% endif %}
+
+    <p>你的答案：{{ user_answer }}</p>
+
+    <a href="/">繼續挑戰下一題</a>
+</body>
+</html>

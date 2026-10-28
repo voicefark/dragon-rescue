@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奶龍救援任務</title>
+</head>
+<body>
+    <h1>奶龍救援任務</h1>
+    <p>歡迎來到程式解題挑戰！</p>
+
+    <h2>{{ question.question }}</h2>
+
+    <form action="/answer" method="post">
+        <input
+            type="hidden"
+            name="question_id"
+            value="{{ question.id }}"
+        >
+
+        {% for option in question.options %}
+            <label>
+                <input
+                    type="radio"
+                    name="answer"
+                    value="{{ option[0] }}"
+                    required
+                >
+                {{ option }}
+            </label>
+            <br>
+        {% endfor %}
+
+        <br>
+        <button type="submit">提交答案</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "question": "下列哪一行 C++ 程式可以輸出 Hello？",
+    "options": [
+      "A. print(\"Hello\");",
+      "B. cout << \"Hello\";",
+      "C. echo(\"Hello\");",
+      "D. output(\"Hello\");"
+    ]
+  },
+  {
+    "id": 2,
+    "question": "下列哪一個運算結果是 7？",
+    "options": [
+      "A. 3 + 3",
+      "B. 10 - 2",
+      "C. 3 + 4",
+      "D. 2 * 5"
+    ]
+  }
+]
