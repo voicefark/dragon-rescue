@@ -9,7 +9,9 @@
 <body>
     <h1>奶龍救援任務</h1>
     <p>歡迎來到程式解題挑戰！</p>
-
+    <p>目前累積答對：{{ correct_count }} 題</p>
+    <p>距離下一組金鑰還差：{{ 5 - (correct_count % 5) }} 題</p>
+    <p>目前剩餘金鑰：{{ remaining_keys }} 組</p>
     <h2>{{ question.question }}</h2>
 
     <form action="/answer" method="post">

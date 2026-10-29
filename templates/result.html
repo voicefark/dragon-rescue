@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -12,7 +11,7 @@
     <h2>{{ question.question }}</h2>
 
     {% if correct %}
-        <p>答對了！奶龍救援進度增加！</p>
+        <p>答對了！</p>
     {% else %}
         <p>答錯了，再接再厲！</p>
         <p>正確答案：{{ correct_answer }}</p>
@@ -20,6 +19,20 @@
 
     <p>你的答案：{{ user_answer }}</p>
 
-    <a href="/">繼續挑戰下一題</a>
+    <hr>
+
+    <h2>救援進度</h2>
+    <p>累積答對：{{ correct_count }} 題</p>
+    <p>{{ message }}</p>
+    <p>剩餘金鑰：{{ remaining_keys }} 組</p>
+
+    {% if key_value %}
+        <hr>
+        <h2>🎉 你獲得了救援金鑰！</h2>
+        <p>請妥善保存以下金鑰：</p>
+        <h2>{{ key_value }}</h2>
+    {% endif %}
+
+    <p><a href="/">繼續挑戰下一題</a></p>
 </body>
 </html>
